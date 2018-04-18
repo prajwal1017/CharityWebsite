@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+
+<br />
+
+<div class="row shadow">
+    <div class="col-md-4 text-center">
+        <i class="fa fa-building fa-3x"></i><br />
+        4 Lamp Post Way<br />
+        War Drobe, Spare Oom<br />
+    </div>
+    <div class="col-md-4 text-center">
+        <i class="fa fa-phone fa-flip-horizontal" style="font-size: 48px;"></i><br />
+        548-362-7642
+    </div>
+    <div class="col-md-4 text-center">
+        <i class="fa fa-envelope fa-3x"></i><br />
+        Support: <a href="mailto:WarDrobe@charity.net">WarDrobe@charity.net</a><br />
+        Marketing: <a href="mailto:WarDrobe.Marketing@Charity.net">WarDrobe.Marketing@Charity.net</a>
+    </div>
+</div>
+
+<hr />
+
+<!-- Begin Google Maps -->
+<head>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Our Location</h3>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var warDrobe = { lat: 52.733602, lng: 0.123567 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                center: warDrobe
+            });
+            var marker = new google.maps.Marker({
+                position: warDrobe,
+                map: map,
+                title: "4 Lamp Post Way\nWar Drobe, Spare Oom"
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc4oiMom3jDO5g8ddZ4xVijbgtQI14AXo&callback=initMap">
+    </script>
+</body>
+<!-- End Google Maps -->
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>

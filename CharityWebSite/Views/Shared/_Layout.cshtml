@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - War Drobe</title>
+    <link href="~/Content/Images/lion-lineart-simple2.ico" rel="shortcut icon" typeof="image/x-icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="~/Content/Images/lion-lineart-simple2.ico" height="50" />
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("War Drobe", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Donations", "Index", "Donations")</li>
+                    <li>@Html.ActionLink("Store", "Index", "Products")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <div class="spacer"></div>
+
+        @* Our footer *@
+
+    </div>
+    <!--/.Footer-->
+    <footer class="footer">
+        <div class="container body-content">
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-lg-6 text-left">
+                    <div class="col-sm-2">
+                        <img src="~/Content/Images/lion-lineart-simple2.ico" />
+                    </div>
+                    <div class="col-sm-10">
+                        <p>
+                        <p id="footer-CharityName">War Drobe Industries, Inc.</p>
+                        4 Lamp Post Way<br />
+                        War Drobe, Spare Oom<br />
+                        548-362-7642<br />
+                        WarDrobe@charity.net<br /><br />
+
+                        <p id="footer-copyright">
+                            WarDrobe is a registered 501(c)3.
+                            &copy; @DateTime.Now.Year - War Drobe Industries.
+                            All rights reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-sm-6 text-right">
+                        <img id="footerIconPadding" src="~/Content/Images/Footer_Icons/footer_icon_facebook.jpg" />
+                        <img id="footerIconPadding" src="~/Content/Images/Footer_Icons/footer_icon_pinterest.jpg" />
+                        <img id="footerIconPadding" src="~/Content/Images/Footer_Icons/footer_icon_tumblr.png" />
+                        <img id="footerIconPadding" src="~/Content/Images/Footer_Icons/footer_icon_twitter.jpg" />
+                        <img id="footerIconPadding" src="~/Content/Images/Footer_Icons/footer_icon_youtube.jpg" />
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>@Html.ActionLink("About us", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Privacy Policy", "PrivacyPolicy", "Home")</li>
+                            <li>@Html.ActionLink("Terms and Conditions", "TermsAndConditions", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

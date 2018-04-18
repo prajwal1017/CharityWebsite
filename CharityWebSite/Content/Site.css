@@ -1,0 +1,161 @@
+﻿body {
+    padding-top: 50px;
+    background-color: #DDDADA;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.main-spacing {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.landing-background {
+    background-color: rgba(255,255,255,0.41);
+    border-radius: 5px;
+}
+
+.landing-background div h2, .landing-background div p, .landing-background div h1 footer {
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding-top: 50px;
+}
+
+.landing-img-container {
+    height: auto;
+    width: 100%;
+}
+
+.homeImage {
+    z-index: -1;
+    display: ;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+    background-color: #005B96;
+    bottom: 0px;
+    min-height: 70px;
+    color: aliceblue;
+}
+
+/*Charlie, adding padding top for about us. This is only padding on one side*/
+.padding-top{
+    padding-top : 100px;
+
+}
+/* generic, same on all sides, padding is short for top,bottom,left,right*/
+.padding{
+    padding : 35px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-size: small;
+}
+
+footer a {
+    color: aliceblue;
+}
+
+#footer-CharityName {
+    padding-top:0;
+    margin-top:0;
+    font-size:1.5em;
+}
+
+#footer-copyright {
+    font-size: .75em;
+}
+
+.spacer {
+    padding-top: 30px;
+}
+
+.homeImageSpacer {
+    height: 700px;
+    width: 100%;
+    float: left;
+}
+
+#footerIconPadding {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    
+    padding:0;
+    margin:0;
+}
+
+footer a:hover {
+    color: none;
+}
+
+.navbar-inverse {
+    background-color: #005B96;
+}
+
+.nav.navbar-nav li a {
+    color: aliceblue;
+}
+
+.navbar-inverse .navbar-brand {
+    color: aliceblue;
+}
+
+#afterImage {
+    padding-top:600px;
+}
+
+#SiteName {
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px white;
+    position:absolute;
+    z-index:1000;
+    top:0px;
+    left:35%;
+}
+
+.large-spacer {
+    padding-top:40%;
+}
+
+.homeText {
+    font-size: 20px;
+    color: rgb(42, 42, 42);
+}
