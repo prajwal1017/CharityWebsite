@@ -1,4 +1,4 @@
-# CharityWebsite
+# Charity Website
 
 This is a group project for my Web Systems Development course in college. We were tasked with creating a website for a ficitonal charity.
 
